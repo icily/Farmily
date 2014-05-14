@@ -155,7 +155,7 @@ section{
 
 .tab > label{
 border:2px solid rgb(120,120,120);
-	border-radius:20px;
+	border-radius:20px 20px 0 0;
     display:block;
     position:relative;
     width:147px;
@@ -184,7 +184,7 @@ border:2px solid rgb(120,120,120);
 .tab > input[type=radio]:checked + label{
     background:#FFF;
 	border:2px solid #FFF;
-	border-radius:20px;
+	border-radius:20px 20px 0 0;
     border-bottom:1px solid transparent;
     z-index:2;
 }
