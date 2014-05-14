@@ -20,7 +20,7 @@ background: -ms-linear-gradient(left, #3ea265 13%,#52ab75 25%,#65b584 38%,#78be9
 background: linear-gradient(to right, #3ea265 13%,#52ab75 25%,#65b584 38%,#78be94 50%,#8bc7a3 62%,#b2dac1 74%,#d8ece0 88%,#ffffff 100%); 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ea265', endColorstr='#ffffff',GradientType=1 ); 
 position: relative;
-top: 1700px;
+top: 1900px;
 }
 
 footer li{

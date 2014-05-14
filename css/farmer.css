@@ -109,7 +109,7 @@ margin: 0 0 1px;
 
 section{
 	background:url(../img/background_inner.jpg);
-	height:1350px;
+	height:1550px;
 	width:950px;
 	position: absolute;
 	left:50%;
@@ -285,7 +285,7 @@ section{
 }
 
 .story_1 p,.story_2 p,.product p{
-	font-size:12px;
+	font-size:18px;
 	color:black;
 	position:relative;
 	margin:0px 0px 0px 100px;
