@@ -152,23 +152,33 @@ section{
 }
 
 .story_1 img,.story_2 img{
-	width:38%;
+	height: 150px;
+	width: auto;
+	overflow: hidden;
 	position:relative;
 	left:7px;
+	top:7px;
+	border-radius: 50%;
+	border: 5px solid #fff;
 }
 
 .story_1,.story_2{
+	display: inline-block;
 	background:#B2DAC1;
 	margin-top:30px;
-	padding:10px;
-	width:400px;
+	margin-right: 20px;
+	padding: 10px;
+	max-width:400px;
+	height: 200px;
 	border-radius: 0.5em;
 }
+
 .story_1 h3,.story_2 h3{
 	color:#52AB75;
 	position:relative;
 	margin:-145px 0px 0px 180px;
 }
+
 
 .name{
 	font-size:18px;
@@ -183,11 +193,6 @@ section{
 	position:relative;
 	margin:0px 0px 0px 180px;
 	margin-top:10px;
-}
-
-.story_2{
-	position:relative;
-	margin:-207px 0px 0px 450px;
 }
 
 #mod-search{

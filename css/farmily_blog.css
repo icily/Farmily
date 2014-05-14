@@ -170,6 +170,7 @@ section nav li:hover a{
 
 .article img {
 	width:10%;
+	border-radius: 50%;
 }
 
 .article h3{
