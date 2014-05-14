@@ -207,12 +207,12 @@ section{
 
 
 .about img{
-	width: 160px;
+	width: 100px;
 	margin-left: normal;
 	margin-top: 50px;
 	position: relative;
 	left: 35px;
-	width:30%;
+  border-radius: 50%;
 }
 .about p{
 	text-align: center;
