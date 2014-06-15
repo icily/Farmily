@@ -1,5 +1,5 @@
 body{
-	background: url(../img/background_3.jpg) repeat;
+	/*background: url(../img/background_3.jpg) repeat;*/
 	font-family: "Helvetica Neue",Arial,"HeitiTC","LiHei Pro","微軟正黑體","Microsoft Jhenghei",sans-serif;
 	margin: 0;
 }
@@ -135,13 +135,15 @@ section{
 	/*top:50%;*/
 	margin: 0px auto;
 	/*margin-left:-480px;*/
-	border-radius: 50%;
+	box-shadow: rgb(155,155,155) 0px 1px 10px 0px;
+	border-radius: 2em;
 }
 
 .banner{
 	height: 300px;
 	background:url(../img/index_pic.jpg) 50% 50% no-repeat;
 	margin: 1.3em 0 0 0;
+	border-radius: 2em 2em 0 0;
 }
 
 .slogan{
@@ -160,6 +162,7 @@ section{
 	width: 950px;
 	background:url(../img/background_inner.jpg);
 	background-repeat: repeat-y;
+	border-radius: 0 0 2em 2em;
 }
 
 .title{
