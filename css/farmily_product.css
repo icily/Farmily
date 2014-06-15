@@ -36,6 +36,7 @@ header{
   background-color: #336600;
   height: 90px;
   padding: 0 100px 0 100px;
+  margin-bottom: 20px; 
   background: url(../img/banner.png) repeat;
 }
 
@@ -148,6 +149,7 @@ nav{
 
 section{
   /*background-color: white;*/
+  background:url(../img/background_inner.jpg);
   width: 950px;
   height: auto;
   position: relative;
@@ -159,59 +161,58 @@ section{
   border-radius: 2em;
 }
 
-
 .title a{
-	font-size:24px;
-	color:black;
-	margin-left:6px;
+  font-size:24px;
+  color:black;
+  margin-left:6px;
 }
 
 .title{
-	margin-left:30px;
-	border-bottom:1px solid;
-	border-bottom-color: #000;
-	width:890px;
+  margin-left:30px;
+  border-bottom:1px solid;
+  border-bottom-color: #000;
+  width:890px;
 }
 
 .tabs{
   position: relative;
-	left:50%;
-	top:50%;
-	margin-top:-550px;
-	margin-left:-450px;
+/*left:50%;
+  top:50%;
+  margin-top:-600px;
+  margin-left:-450px;*/
   width:900px;
   height:1250px;
 }
 
 .tab{
-  float:left;
+    float:left;
 }
 
 .tab > input[type=radio]{
   display:none;
-	border:2px solid #FFF;
-	border-radius:20px;
+  border:2px solid #FFF;
+  border-radius:20px;
 }
 
 .tab > label{
-	border:2px solid rgb(120,120,120);
+border:2px solid rgb(120,120,120);
   border-radius:20px 20px 0 0;
-  display:block;
-  position:relative;
-  width:147px;
-  height:20px;
-  margin-right:-1px;
-  padding:5px 15px;
-  background:rgb(120,120,120);
+    display:block;
+    position:relative;
+    width:147px;
+    height:20px;
+    margin-right:-1px;
+    padding:5px 15px;
+    background:rgb(120,120,120);
 }
 
 .tab > label a{
-	color:black;
+  color:black;
 }
 
 .tab > .content{
     display:none;
-    position:relative;
+    position:absolute;
     top:30px;
     right:0;
     bottom:0;
@@ -223,8 +224,8 @@ section{
 
 .tab > input[type=radio]:checked + label{
     background:#FFF;
-	  border:2px solid #FFF;
-    border-radius:20px 20px 0 0;
+  border:2px solid #FFF;
+  border-radius:20px 20px 0 0;
     border-bottom:1px solid transparent;
     z-index:2;
 }
@@ -234,37 +235,37 @@ section{
 }
 
 .about{
-	margin-left: 15px;
-	margin-top: 20px;
-	margin-right: 10px;
-	margin-right:0px;
-	display: inline-block;
-	height: 180px;
-	width: 30%;
-	background-color: rgba(192,192,192,0.7);
-	border-radius: 40px;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-right:0px;
+  display: inline-block;
+  height: 180px;
+  width: 30%;
+  background-color: rgba(192,192,192,0.7);
+  border-radius: 40px;
 }
 
 
 
 .about img{
-	width: 100px;
-	margin-left: normal;
-	margin-top: 50px;
-	position: relative;
-	left: 35px;
+  width: 100px;
+  margin-left: normal;
+  margin-top: 50px;
+  position: relative;
+  left: 35px;
   border-radius: 50%;
 }
 .about p{
-	text-align: center;
-	position:relative;
-	left:60px;
-	top:-100px;
-	color:black;
+  text-align: center;
+  position:relative;
+  left:60px;
+  top:-100px;
+  color:black;
 }
 
 .name{
-	font-size:24px;
+  font-size:24px;
 }
 .search {
     position: relative;

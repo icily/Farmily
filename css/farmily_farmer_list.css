@@ -36,6 +36,7 @@ header{
   background-color: #336600;
   height: 90px;
   padding: 0 100px 0 100px;
+  margin-bottom: 20px; 
   background: url(../img/banner.png) repeat;
 }
 
