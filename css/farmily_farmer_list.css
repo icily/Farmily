@@ -148,6 +148,7 @@ nav{
 
 section{
   /*background-color: white;*/
+  background:url(../img/background_inner.jpg);
   width: 950px;
   height: auto;
   position: relative;
@@ -187,7 +188,7 @@ section{
 }
 
 .tab > input[type=radio]{
-    display:none;
+  display:none;
 	border:2px solid #FFF;
 	border-radius:20px;
 }
