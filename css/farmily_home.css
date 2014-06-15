@@ -11,17 +11,10 @@ a{
 
 footer{
 	height: 100px;
-	/*background: #3ea265;
-	background: -moz-linear-gradient(left, #3ea265 13%, #52ab75 25%, #65b584 38%, #78be94 50%, #8bc7a3 62%, #b2dac1 74%, #d8ece0 88%, #ffffff 100%); 
-	background: -webkit-gradient(linear, left top, right top, color-stop(13%,#3ea265), color-stop(25%,#52ab75), color-stop(38%,#65b584), color-stop(50%,#78be94), color-stop(62%,#8bc7a3), color-stop(74%,#b2dac1), color-stop(88%,#d8ece0), color-stop(100%,#ffffff)); 
-	background: -webkit-linear-gradient(left, #3ea265 13%,#52ab75 25%,#65b584 38%,#78be94 50%,#8bc7a3 62%,#b2dac1 74%,#d8ece0 88%,#ffffff 100%); 
-	background: -o-linear-gradient(left, #3ea265 13%,#52ab75 25%,#65b584 38%,#78be94 50%,#8bc7a3 62%,#b2dac1 74%,#d8ece0 88%,#ffffff 100%); 
-	background: -ms-linear-gradient(left, #3ea265 13%,#52ab75 25%,#65b584 38%,#78be94 50%,#8bc7a3 62%,#b2dac1 74%,#d8ece0 88%,#ffffff 100%); 
-	background: linear-gradient(to right, #3ea265 13%,#52ab75 25%,#65b584 38%,#78be94 50%,#8bc7a3 62%,#b2dac1 74%,#d8ece0 88%,#ffffff 100%); 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ea265', endColorstr='#ffffff',GradientType=1 ); */
 	background: url(../img/footer.jpg) repeat;
 	position: relative;
 	top: 30px;
+	background-color: #336600;
 }
 
 footer li{
@@ -30,19 +23,23 @@ footer li{
 	list-style: none;
 	position: relative;
 	top: 50px;
-	margin-left: 40px;
+	margin-left: 10px;
 	padding: 10px;
 }
 
+footer a:hover{
+	color: #FF6;
+}
+
 header{
-	background: #3EA265;
+	background-color: #336600;
 	height: 90px;
 	padding: 0 100px 0 100px;
 	background: url(../img/banner.png) repeat;
 }
 
 header a:hover{
-	color: #d8ece0;
+	color: #FF6;
 }
 
 nav{
@@ -68,11 +65,32 @@ nav{
 	display: inline-block;
 	list-style: none;
 	position: relative;
-	margin-left: 10px;
+	margin-left: 8px;
 }
 
 .main_nav_li > a{
-	padding: 10px;
+	padding: 3px 8px;
+}
+
+.member{
+	margin-left: 12px;
+	padding-left: 14px;
+	border-left: 1px #fff solid;
+	display: inline;
+}
+
+.member-btn{
+	font-size: 18px;
+	background-color: #FF6;
+	color: #360;
+	border-radius: 0.5em;
+	border: solid 2px #FF6;
+	margin-left: 8px;
+}
+
+.member-btn:hover{
+	color: #FF6;
+	background-color: #360;
 }
 
 .sub{
@@ -119,7 +137,7 @@ nav{
 }
 
 .sub li:hover{
-	background:#3EA265;
+	background:#336600;
 }
 
 .sub li:hover a{
@@ -169,9 +187,10 @@ section{
 	position: relative;
 	padding-bottom: .3em;
 	border-bottom: 1px black solid;
-	margin: 1em 2em 1.3em 2em;
+	margin: 1em 30px 1.3em 30px;
 	font-size: 20px;
 	color: black;
+	width: 880px;
 }
 
 .content img{
