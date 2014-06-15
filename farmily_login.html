@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="img/leaf.png" alt="Farmily">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+  <link rel="stylesheet" type="text/css" href="css/searchbar.css">
+  <link rel="stylesheet" type="text/css" href="css/farmily_login.css">
+  <title>登入 - Farmily | 農家</title>
+</head>
+<body>
+  <header>   
+   	<a href="index.html"><img src="img/logo.png" alt="Farmily" class="logo"></a>
+   	<nav>
+     <ul class="main_nav">
+       <li class="main_nav_li">
+       	<a href="index.html">首頁</a>
+       </li>
+       <li class="main_nav_li">
+         <a href="farmily_product.html">農產品</a>
+         <div class="sub">
+           <ul>
+             <li><a href="farmily_product.html">五穀雜糧</a></li>
+             <li><a href="farmily_product.html">蔬菜</a></li>
+             <li><a href="farmily_product.html">畜產/水產</a></li>
+             <li><a href="farmily_product.html">水果</a></li>
+             <li><a href="farmily_product.html">手製品</a></li>
+           </ul>
+         </div>
+       </li>
+       <li class="main_nav_li">
+       	<a href="farmily_farmer_list.html">農友列表</a>
+       		<div class="sub">
+           <ul>
+             <li><a href="farmily_farmer_list.html">北部</a></li>
+             <li><a href="farmily_farmer_list.html">中部</a></li>
+             <li><a href="farmily_farmer_list.html">南部</a></li>
+             <li><a href="farmily_farmer_list.html">東部</a></li>
+             <li><a href="farmily_farmer_list.html">外島</a></li>
+           </ul>
+         </div>
+       </li>
+       <li class="main_nav_li">
+       	<a href="farmily_aboutus.html">關於農家</a>
+       </li>
+       <div class="member">
+	       <li class="main_nav_li">
+	       	<a class="member-btn" href="farmily_register.html">農友登記</a>
+	       </li>
+	       <li class="main_nav_li">
+	       	<a class="member-btn" href="..">登入</a>
+	       </li>
+   	       <li class="main_nav_li">
+	       	<a class="member-btn" href="..">管理農園</a>
+	       </li>
+   	       <li class="main_nav_li">
+	       	<a class="member-btn" href="..">登出</a>
+	       </li>
+	   </div>
+     </ul>
+    </nav> 
+  </header>
+  
+  <section>
+	<div class="content">
+		<div class="title">
+			<img class="list-img" src="img/leaf.png"></img>登入
+		</div>
+		<div class="form">
+			<form class="pure-form pure-form-stacked" method="submit" action="#">
+				<fieldset>
+					<div class="format">
+						<label>E-mail</label>
+		            	<input id="id" type="text" class="pure-input-rounded" placeholder="">
+	            	</div>
+	            	<div>
+						<label>密碼</label>
+		            	<input id="password" type="password" class="pure-input-rounded" placeholder="">
+	            	</div>
+	        		<div class="format">
+	        			<button type="submit" id="button" class="pure-button">登入</button>
+	        		</div>	
+				</fieldset>
+			</form>
+		</div>
+	</div>
+  </section>
+  
+  <footer>
+  		<ul>
+             <a href=".."><li>交易提醒</li></a>
+             <a href=".."><li>聯絡我們</li></a>
+        </ul>
+  </footer>
+
+</body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=1453336538238575&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</html>
+
+
+
+
+
