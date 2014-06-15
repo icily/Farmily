@@ -14,6 +14,7 @@ footer{
 	background: url(../img/footer.jpg) repeat;
 	position: relative;
 	top: 30px;
+	padding-left: 60px;
 	background-color: #336600;
 }
 
@@ -168,7 +169,7 @@ section{
 .slogan{
 	position: absolute;
 	font-size: 36px;
-	background: rgba(62,162,101,0.5);
+	background: rgba(195,216,37,0.5);
 	color: white;
 	padding: 7px;
 	padding-left: 50px;
@@ -229,7 +230,7 @@ section{
 
 .story_1,.story_2{
 	display: inline-block;
-	background: rgba(150,180,0,0.5);
+	background: rgba(195,216,37,0.5);
 	margin-right: 20px;
 	padding: 10px;
 	width: 400px;
