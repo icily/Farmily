@@ -135,6 +135,7 @@ section{
 	/*top:50%;*/
 	margin: 0px auto;
 	/*margin-left:-480px;*/
+	border-radius: 50%;
 }
 
 .banner{
