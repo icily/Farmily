@@ -6,124 +6,147 @@
   <link rel="stylesheet" type="text/css" href="css/farmily_register.css">
   <link rel="shortcut icon" href="img/leaf.png" alt="Farmily">
   <title>Farmily_農民登記</title>
+	<script type="text/javascript">
+	function show(shown, hidden) {
+		document.getElementById(shown).style.display='block';
+		//document.getElementById(shown).style.background-color='rgb(120,120,120)';
+		document.getElementById(hidden).style.display='none';
+		//document.getElementById(hidden).style.background-color='rgba(248,248,248,0.5)';
+		return false;
+	}
+	</script>
 </head>
 
 <body>
-  <header>   
-    <a href="index.html"><img src="img/logo.png" alt="Farmily" class="logo"></a>
-    <nav>
+  <header>
+   <a href="farmily_home.html"><img src="img/logo.png" alt="Farmily" class="logo"></a>
+    
+   <nav>
      <ul class="main_nav">
-       <li class="main_nav_li">
-        <a href="index.html">首頁</a>
-       </li>
+       <li class="main_nav_li"><a href="farmily_home.html">首頁</a></li>
        <li class="main_nav_li">
          <a href="farmily_product.html">農產品</a>
          <div class="sub">
            <ul>
-             <li><a href="farmily_product.html" onClick="getData(1, '五榖雜糧')">五穀雜糧</a></li>
-             <li><a href="farmily_product.html" onClick="getData(1, '蔬菜')">蔬菜</a></li>
-             <li><a href="farmily_product.html" onClick="getData(1, '畜產/水產')">畜產/水產</a></li>
-             <li><a href="farmily_product.html" onClick="getData(1, '水果')">水果</a></li>
-             <li><a href="farmily_product.html" onClick="getData(1, '手製品')">手製品</a></li>
+             <li><a href="farmily_product.html">五穀雜糧</a></li>
+             <li><a href="farmily_product.html">蔬菜</a></li>
+             <li><a href="farmily_product.html">畜產/水產</a></li>
+             <li><a href="farmily_product.html">水果</a></li>
+             <li><a href="farmily_product.html">手製品</a></li>
            </ul>
          </div>
        </li>
-       <li class="main_nav_li">
-        <a href="farmily_farmer_list.html">農友列表</a>
-          <div class="sub">
-           <ul>
-             <li><a href="farmily_farmer_list.html" onClick="getData(1, '北部')">北部</a></li>
-             <li><a href="farmily_farmer_list.html" onClick="getData(1, '中部')">中部</a></li>
-             <li><a href="farmily_farmer_list.html" onClick="getData(1, '南部')">南部</a></li>
-             <li><a href="farmily_farmer_list.html" onClick="getData(1, '東部')">東部</a></li>
-             <li><a href="farmily_farmer_list.html" onClick="getData(1, '外島')">外島</a></li>
-           </ul>
-         </div>
-       </li>
-       <li class="main_nav_li">
-        <a href="farmily_aboutus.html">關於農家</a>
-       </li>
-       <div class="member">
-         <li class="main_nav_li">
-          <a class="member-btn" href="farmily_register.html">農友登記</a>
-         </li>
-         <li class="main_nav_li">
-          <a class="member-btn" href="farmily_login.html">登入</a>
-         </li>
-           <li class="main_nav_li">
-          <a class="member-btn" href="farm_edit.html">管理農園</a>
-         </li>
-           <li class="main_nav_li">
-          <a class="member-btn" href="..">登出</a>
-         </li>
-     </div>
+       <li class="main_nav_li"><a href="farmily_farmer_list.html">農友列表</a></li>
+       <li class="main_nav_li"><a href="farmily_register.html">農友登記</a></li>
+       <li class="main_nav_li"><a href="farmily_aboutus.html">關於我們</a></li>
+       <li class="main_nav_li"><a href="farmily_blog.html">部落格</a></li>
      </ul>
-    </nav> 
-  </header>
+   </nav> 
+ </header>
 
 <section>
+	<div class="content">
+
 	<ul class="title">
 		<li>
-			<img class="list-style" src="img/leaf.png"></img>
+			<img src="img/leaf.png"></img>
 			<p>農友登記</p>
 		</li>
 	</ul>	
-	<div class="content">
-		<ul class="step">
-			<li class="step_1">
-				<p>1：填寫基本資料</p>
-			</li>
-			<li class="step_2">
-				<p>2：填寫農園資訊</p>
-			</li>
-			<li class="step_3">
-				<p>3：新增農產品</p>
-			</li>
-		</ul>	
+	
+	 <!--signup頁的第一部份-->
 		
-		<div class="form">
-		<form class="pure-form pure-form-stacked" method="link" action="farmily_register_2.html">
+		<form class="pure-form pure-form-stacked" action="farmily_register_3.html" id="signupform" onsubmit="event.preventDefault();" novalidate>
+		<!--action 是用來連接到該出現的頁面上-->
+			<div class="form" id="signup1" name="p1">
+				<ul class="step1">
+					<li class="step_1">
+						<p>1：填寫基本資料</p>
+					</li>
+					<li class="step_2">
+						<p>2：填寫農園資訊</p>
+					</li>
+					<!--<li class="step_3">
+						<p>3：新增農產品</p>
+					</li>-->
+				</ul>	
 			<fieldset>
 				<div class="format">
-				<label for="name">真實姓名</label>
-            	<input id="name" type="text" class="pure-input-rounded" placeholder="王大明">
+				<label for="name">真實姓名*</label>
+            	<input required id="signup_name" type="text" class="pure-input-rounded" placeholder="王大明" name="name">
             	</div>
             	<div class="format photo">
-        			<img src="img/user_photo.png" alt="user_photp">
-        			<button type="submit" id="upload" class="pure-button">上傳個人照片</button>
+        			<img src="img/user_photo.png" alt="user_photo">
+        			<input type="file" id="image-upload" class="pure-button">
         		</div>
-            	<div class="format">
-				<label for="email">電子信箱</label>
-        		<input id="email" type="email" class="pure-input-rounded" placeholder="someone@url.tw">
+            	<div class="format" id="required">
+				<label for="email">電子信箱*</label>
+        		<input required id="signup_email" type="email" class="pure-input-rounded" placeholder="someone@url.tw" name="email">
         		</div>
-        		<div class="format">
-        		<label for="password">密碼</label>
-        		<input id="password" type="password" class="pure-input-rounded" placeholder="請輸入至少七位的英數字組合">
+        		<div class="format" id="required">
+        		<label for="password">密碼*</label>
+        		<input required id="signup_password" type="password" class="pure-input-rounded" placeholder="請輸入至少七位的英數字組合" name="password">
         		</div>
-        		<div class="format">
-				<label for="check_password">確認密碼</label>
-        		<input id="check_password" type="password" class="pure-input-rounded" placeholder="請再輸入一次密碼">
+        		<div class="format" id="required">
+				<label for="check_password">確認密碼*</label>
+        		<input required id="signup_password1" type="password" class="pure-input-rounded" placeholder="請再輸入一次密碼" name="papassword">
         		</div>
-        		<div class="format">
-        		<label for="phone">聯絡電話</label>
-        		<input id="phone" type="text" class="pure-input-rounded" placeholder="0912345678">
+        		<div class="format" id="required">
+        		<label for="phone">聯絡電話*</label>
+        		<input required id="signup_phone" type="text" class="pure-input-rounded" placeholder="0912345678" name="phone">
         		</div>
         		<div class="format">
         		<label for="facebook">Facebook</label>
-        		<input id="facebook" type="text" class="pure-input-rounded" placeholder="若無，可不需填寫">
+        		<input id="signup_facebook" type="text" class="pure-input-rounded" placeholder="若無，可不需填寫" name="facebook">
         		</div>
         		<div class="format">
         		<label for="blog">部落格/網站</label>
-        		<input id="blog" type="text" class="pure-input-rounded" placeholder="若無，可不需填寫">  
+        		<input id="signup_blog" type="text" class="pure-input-rounded" placeholder="若無，可不需填寫" name="blog">  
         		</div>
         		<div class="format">
-        		<button type="submit" id="button" class="pure-button">> 下一步</button>
+        		<button type="submit" id="button" class="pure-button" onclick="return show('signup2','signup1');"> 下一步</button>
         		</div>	
 			</fieldset>
+			</div>
+			
+			<div class="form" id="signup2" style="display:none" name="p2">
+			<ul class="step2">
+				<li class="step_1">
+					<p>1：填寫基本資料</p>
+				</li>
+				<li class="step_2">
+					<p>2：填寫農園資訊</p>
+				</li>
+			</ul>	
+			<fieldset>
+			<div class="format"  id="required">
+				<label for="farm_name">農園名稱</label>
+				<input id="signup_farm_name" type="text" class="pure-input-rounded" placeholder="大明的開心農場">
+			</div>
+			<div class="format photo">
+				 <img src="img/farm_photo.png" alt="farm_photo">
+				 <input type="file" id="farm-image-upload" class="pure-button">上傳農園照片</button>
+			</div>
+			<div class="format" id="required">
+				<label for="address">農園地址</label>
+				<input id="signup_address" type="text" class="pure-input-rounded" placeholder="請輸入完整地址">
+			</div>
+			<div class="format">
+				<label for="farm_story">農園故事</label>
+				<p>200字內，諸如得獎事跡、種植理念、農產特色、農法等等</p>
+				<textarea id="signup_farm_story" type="text" class="pure-input-rounded"></textarea>
+			</div>
+			<div class="format">
+				<button type="submit" id="button" class="pure-button" onclick="return show('signup1','signup2');"> 上一步</button> 
+				<button type="submit" id="button" class="pure-button" onclick=""> 完成註冊</button>  
+			</div>  
+			</fieldset>
+			</div>
 		</form>
-		</div>
+
 		
 	</div>
+ 
 </section>
 
 <footer>
@@ -134,4 +157,7 @@
 </footer>
 
 </body>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src='https://www.parsecdn.com/js/parse-1.2.18.min.js'></script>
+<script src="./js/farm.js" type="text/javascript"></script>
 </html>
