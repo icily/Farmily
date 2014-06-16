@@ -198,6 +198,14 @@ section{
 }
 
 .form{
-	margin-left: 40px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.form input{
+	width: 300px;
+}
+
+.format{
 	margin-bottom: 20px;
 }
