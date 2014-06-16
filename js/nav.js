@@ -12,6 +12,4 @@
 		document.getElementById('editButton').style.display = 'none';
 		document.getElementById("logoutButton").style.display = 'none';
 	}
-
-	Parse.history.start();
 })();
