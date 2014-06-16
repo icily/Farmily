@@ -37,6 +37,7 @@ header{
 	height: 90px;
 	padding: 0 100px 0 100px;
 	background: url(../img/banner.png) repeat;
+	margin-bottom: 20px;
 }
 
 header a:hover{
@@ -159,8 +160,44 @@ section{
 	border-radius: 2em;
 }
 
+.content{
+	display: inline-block;
+	width: 950px;
+	background:url(../img/background_inner.jpg);
+	background-repeat: repeat-y;
+	border-radius: 2em;
+}
+
+.banner{
+	background: url(../img/farmer_main.JPG) repeat;
+	height: 300px;
+	border-radius: 2em 2em 0 0;
+}
+
+.slogan{
+	display: inline;
+	position: relative;
+	font-size: 36px;
+	background: rgba(195,216,37,0.5);
+	color: white;
+	padding: 7px;
+	padding-left: 50px;
+	margin: 200px 0 0 0;
+	float: left;
+}
+
+#farm-name{
+	display: inline;
+	margin-right: 1em;
+}
+
+#farmer-name{
+	display: inline;
+	margin-right: 20px;
+}
+
 .main_pic{
-  width:950px;
+  width: 950px;
   position: relative;
   margin: 0px 0px 0px 0px;
   overflow: auto;
@@ -175,22 +212,13 @@ section{
 
 .farmer_head{
 	width: 200px;
-	position: absolute;
-	margin: -400px 0px 0px 50px;
-	border-radius: 700px;
+	position: relative;
+	float: right;
+	margin: 50px 30px 0px 20px;
+	border-radius: 50%;
 	border-style: solid;
 	border-color: #FFFFFF;
 	border-width: 10px;
-}
-
-
-.slogan{
-   position:absolute;
-   margin: -100px 0px 0px 0px;
-   font-size:36px;
-   background:rgba(62,162,101,0.5);
-   color:white;
-   padding:10px;
 }
 
 .farmer_note{
@@ -203,8 +231,8 @@ section{
 }
 
 .content li{
-	width:870px;
-	position:relative;
+	width: 870px;
+	position: relative;
 	list-style:none;
 	border-bottom:1px solid;
 	border-bottom-color: #000;
@@ -213,9 +241,9 @@ section{
 }
 
 .content li a{
-	font-size:24px;
-	color:black;
-	margin-left:6px;
+	font-size: 24px;
+	color: black;
+	margin-left: 6px;
 }
 .farmer_content{
 	width: 60%;
@@ -229,28 +257,27 @@ section{
 }
 
 .farmer_content li,.sidebar li{
-	width:100%;
-	position:relative;
-	list-style:none;
-	border-bottom:1px solid;
+	width: 100%;
+	position: relative;
+	list-style: none;
+	border-bottom: 1px solid;
 	border-bottom-color: #000;
-	padding-bottom:3px;
-	margin-top:10px;
+	padding-bottom: 3px;
+	margin-top: 10px;
 	float: left;
 }
 
 
 .farmer_content li a,.sidebar li a{
-	font-size:24px;
-	color:black;
-	margin-left:6px;
-
+	font-size: 24px;
+	color: black;
+	margin-left: 6px;
 }
 
 .story_1 img,.story_2 img,.product img{
-	width:38%;
-	position:relative;
-	left:10px;
+	width: 38%;
+	position: relative;
+	left: 10px;
 }
 
 .story_1,.story_2{
@@ -261,9 +288,9 @@ section{
 	border-radius: 0.5em;
 }
 .story_1 h3,.story_2 h3,.product h3,.info h3{
-	color:#52AB75;
-	position:relative;
-	margin:-75px 0px 0px 100px;
+	color: #52AB75;
+	position: relative;
+	margin: -75px 0px 0px 100px;
 	width: 150px;
 	height: 10px;
 }
@@ -312,16 +339,16 @@ section{
 
 .product{	
 	margin-top: 5px;
-	padding:10px;
+	padding: 10px;
 	width: 200px;
 	float: left;
-	position:relative;
+	position: relative;
 }
 
 .name{
-	font-size:18px;
-	color:black;
-	position:relative;
+	font-size: 18px;
+	color: black;
+	position: relative;
 	margin:-140px 0px 0px 100px;
 }
 
@@ -330,16 +357,16 @@ section{
 	color:black;
 	position:relative;
 	margin:0px 0px 0px 100px;
-	margin-top:10px;
+	margin-top: 10px;
 }
 .description{
 	margin-top: 5px;
-	padding:10px;
+	padding: 10px;
 	float: left;
-	position:relative;
+	position: relative;
 } 
 .description p{
-	margin-top:50px;
+	margin-top: 50px;
 	margin:0px 0px 0px 0px;
 	float: left;
 }
@@ -347,90 +374,4 @@ section{
 .story_2{
 	position:relative;
 	margin:-207px 0px 0px 450px;
-}
-
-#mod-search{
-	margin:30px;
-}
-
-.cereals img,.fruit img,.vegetable img,.animal img,.diy img{
-	width:150px;
-	height:120px;
-}
-
-.cereals{position:absolute;width:100px;}
-
-.fruit{
-	position:relative;
-	left:180px;
-	width:100px;
-}
-
-.vegetable{
-	position:relative;
-	left:360px;
-	top:-175px;
-	width:100px;
-}
-
-.animal{
-	position:relative;
-	top:-350px;
-	left:540px;
-	width:100px;
-}
-
-.diy{
-	position:relative;
-	left:720px;
-	top:-525px;
-	width:100px;
-}
-
-.fruit p,.vegetable p{
-	margin-left:57px;
-	width:100px;
-}
-
-.cereals p,.animal p{
-	margin-left:47px;
-	width:100px;
-}
-
-.diy p{
-	margin-left:52px;
-	margin-right:0px;
-	width:100px;
-}
-
-.fb_iframe_widget {
-	display: inline-block;
-	position: relative;
-	top:-500px;
-	left:50px;
-}
-
-.story_button{
-	background-color:#44c767;
-	-moz-border-radius:25px;
-	-webkit-border-radius:25px;
-	border-radius:25px;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-weight:bold;
-	font-size:12px;
-	padding:5px 11px;
-	text-shadow:0px 1px 0px #2f6627;
-	position:relative;
-	left:330px;
-	top:6px;
-}
-.story_button:hover {
-	background-color:#5cbf2a;
-}
-.story_button:active {
-	position:relative;
-	top:1px;
 }
