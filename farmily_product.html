@@ -3,7 +3,7 @@
 	  <meta charset="utf-8">
 	  <link rel="stylesheet" type="text/css" href="css/farmily_product.css">
 	  <link rel="shortcut icon" href="img/leaf.png" alt="Farmily">
-	  <title>Farmer_Product</title>
+	  <title>農產品 - Farmily | 農家</title>
 	</head>
 	<body>
   <header>   
@@ -41,16 +41,16 @@
        	<a href="farmily_aboutus.html">關於農家</a>
        </li>
        <div class="member">
-	       <li class="main_nav_li">
+	       <li class="main_nav_li" id="registerButton">
 	       	<a class="member-btn" href="farmily_register.html">農友登記</a>
 	       </li>
-	       <li class="main_nav_li">
+	       <li class="main_nav_li" id="loginButton">
 	       	<a class="member-btn" href="farmily_login.html">登入</a>
 	       </li>
-   	       <li class="main_nav_li">
+   	       <li class="main_nav_li" id="editButton">
 	       	<a class="member-btn" href="farm_edit.html">管理農園</a>
 	       </li>
-   	       <li class="main_nav_li">
+   	       <li class="main_nav_li" id="logoutButton">
 	       	<a class="member-btn" href="..">登出</a>
 	       </li>
 	   </div>
@@ -656,5 +656,8 @@
 	  </footer>
 
 	</body>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src='https://www.parsecdn.com/js/parse-1.2.18.min.js'></script>
+	<script src="./js/nav.js" type="text/javascript"></script>
 	</html>
 
