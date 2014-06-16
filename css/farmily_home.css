@@ -159,13 +159,6 @@ section{
 	border-radius: 2em;
 }
 
-.banner{
-	height: 300px;
-	background:url(../img/index_pic.jpg) 50% 50% no-repeat;
-	margin: 1.3em 0 0 0;
-	border-radius: 2em 2em 0 0;
-}
-
 .slogan{
 	position: absolute;
 	font-size: 36px;
