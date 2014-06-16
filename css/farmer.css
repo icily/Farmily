@@ -149,6 +149,7 @@ nav{
 
 section{
 	/*background-color: white;*/
+	background:url(../img/background_inner.jpg) repeat-y;
 	width: 950px;
 	height: auto;
 	position: relative;
@@ -163,7 +164,6 @@ section{
 .content{
 	display: inline-block;
 	width: 950px;
-	background:url(../img/background_inner.jpg);
 	background-repeat: repeat-y;
 	border-radius: 2em;
 }
