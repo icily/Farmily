@@ -176,7 +176,8 @@ section{
 	margin: 0 30px 1.3em 30px;
 	width: 880px;
 	font-size: 24px;
-	color:black;
+	color: black;
+	display: inline-block;
 }
 
 #product-catogory{
@@ -187,6 +188,18 @@ section{
 	width: 450px;
 	float: left;
 	position: relative;
+}
+
+.detail-title{
+	border-right: 1px solid black;
+	width: 60px;
+	display: inline;
+}
+
+#product-spec, #product-delivery, #product-payment{
+	width: 100px;
+	display: inline;
+	margin-left: 10px;
 }
 
 .product-detail{
@@ -203,7 +216,10 @@ section{
 }
 
 #product-price{
-	font-size: 18px;
+	font-size: 24px;
+	color: #360;
+	font-weight: bold;
+	letter-spacing: 1px;
 }
 
 .product-info{
@@ -220,7 +236,7 @@ section{
 	border-radius: 50%;
 	width: 60px;
 	vertical-align: middle;
-	margin: 0 20px;
+	margin: 5px 10px;
 }
 
 .product-description{
@@ -229,9 +245,18 @@ section{
 	margin: 20px 10px;
 	width: 450px;
 }
+
+.product-description a{
+	color: #360;
+}
+
+#farm-name, #farmer-name{
+	margin-right: 1em;
+}
+
 #product-title{
 	margin: .7em 0 5px .7em;
-	border-bottom: 1px solid;
+	border-bottom: 1px solid black;
 	padding-bottom: 5px;
 }
 
