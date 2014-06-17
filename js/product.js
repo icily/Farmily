@@ -55,14 +55,14 @@ function getData(page,category){
             //console.log(productList);
             list="";
             productList.forEach(function (e){
-             list += e.Prod_name+" ";
+             list += e.Prod_name+"<br>";
             });
           },
           error: function(error) {
           alert("Error: " + error.code + " " + error.message);
           }
         }).then(function(){
-          var html = '<a href="farmer.html?name='+e.objectId+'"><div class="about"><img src="'+e.Farmer_Pic.url+'"></img><p class="name">'+e.Name+'</p><p>'+list+'</p></div></a>';
+          var html = '<a href="farmer.html?name='+e.objectId+'"><div class="about"><div class="img"><img src="'+e.Farmer_Pic.url+'"></img></div><div class="info"><div class="name">'+e.Name+'</div><div class="product">'+list+'</div></div></div></a>';
           $('.tab_content').append(html);
         });
       });
