@@ -113,11 +113,11 @@ function call (id){
           })
         }
       }).then(function(){
-          var banner = '<img src="'+objList[0].Farmer_Pic.url+'" class="farmer_head"><h2 class="slogan"><div id="farm-name">'+objList[0].Name+'</div><div id="farmer-name">'+objList[0].Name+'</div></h2>';
+          var banner = '<img src="'+objList[0].Farmer_Pic.url+'" class="farmer_head"><h2 class="slogan"><div id="farm-name">'+objList[0].FarmLand+'</div><div id="farmer-name">'+objList[0].Name+'</div></h2>';
           $('.banner').append(banner);
           var description = '<p>'+objList[0].farm_story+'</p>';
           $('.description').append(description);
-          var info = '<p><i class="fa fa-home fa-2x"></i><a href="'+objList[0].website+'">'+objList[0].Name+'</a></p><p><i class="fa fa-facebook-square fa-2x"></i><a href="'+objList[0].facebook+'">粉絲專頁</a></p><p><i class="fa fa-phone fa-2x"></i>'+objList[0].telephone+'</p>';
+          var info = '<p><i class="fa fa-home fa-2x"></i><a href="'+objList[0].website+'">'+objList[0].FarmLand+'</a></p><p><i class="fa fa-facebook-square fa-2x"></i><a href="'+objList[0].facebook+'">粉絲專頁</a></p><p><i class="fa fa-phone fa-2x"></i>'+objList[0].telephone+'</p>';
           $('.info').append(info);
         });
     }
