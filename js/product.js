@@ -207,18 +207,17 @@ function callprod (id){
           farmerName = farmer[0].Name;
           farmerId = farmer[0].objectId;
           farmerPic = farmer[0].Farmer_Pic.url;
+          farmLand = farmer[0].FarmLand;
         }
       }).then(function(){
 
-/*          var detail = '<img src="" id="product-img"><div class="product-info"><h2 id="product-title">'+objList[0].Prod_name+'</h2><p id="product-catogory">'+objList[0].Category+'</p><ul><p id="product-price">每'+objList[0].Prod_stat+' '+objList[0].Prod_price+'元</p><li class="detail-title"><div id="product-spec">規格</li>'+objList[0].Prod_stat+'，紙箱裝</div><li class="detail-title">運送方式</li><div id="product-delivery">'+objList[0].Prod_arrive+'，200元</div><li class="detail-title">付費方式</li><div id="product-payment">'+objList[0].Prod_payment+'</div></ul><a id="button" href="farmer.html?name='+farmerId+'">立刻購買</a></div><div class="product-description"><h3 class="description-title">關於農產品</h3><div id="farm-description"><li class="detail-title">農友</li><a href="farmer.html?name='+farmerId+'" id="farmer-name">'+farmerName+'<img src="'+farmerPic+'" id="farmer-img"></a><a href="farmer.html?name='+farmerId+'" id="farm-name">'+farmerName+'</a><a href="farmer.html?name='+farmerId+'" id="farmer-name">'+farmerName+'</a></div><h3 class="description-title">農產品敘述</h3><div id="product-description">'+objList[0].Prod_describe+'</div></div>';
-          $('.product-detail').append(detail);*/
-      var detail = '<img src="'+objList[0].Prod_Pic.url+'" id="product-img"><div class="product-info"><h2 id="product-title">'+objList[0].Prod_name+'</h2><p id="product-catogory">'+objList[0].Category+'</p><ul><p id="product-price">每'+objList[0].Prod_stat+' '+objList[0].Prod_price+'元</p><li class="detail-title">規格</li><div id="product-spec">'+objList[0].Prod_stat+'，紙箱裝</div><li class="detail-title">運送方式</li><div id="product-delivery">'+objList[0].Prod_arrive+'，200元</div><li class="detail-title">付費方式</li><div id="product-payment">'+objList[0].Prod_payment+'</div></ul><a id="button" href="farmer.html">立刻購買</a></div><div class="product-description"><h3 class="description-title">關於農產品</h3><div id="farm-description"><li class="detail-title">農友</li><a href="farmer.html?name='+farmerId+'"><img src="'+farmerPic+'" id="farmer-img"></a><a href="farmer.html?name='+farmerId+'" id="farm-name">'+farmerName+'</a><a href="farmer.html?name='+farmerId+'" id="farmer-name">'+farmerName+'</a></div><h3 class="description-title">農產品敘述</h3><div id="product-description">'+objList[0].Prod_describe+'</div></div>';
+      var detail = '<img src="'+objList[0].Prod_Pic.url+'" id="product-img"><div class="product-info"><h2 id="product-title">'+objList[0].Prod_name+'</h2><p id="product-catogory">'+objList[0].Category+'</p><ul><p id="product-price">每'+objList[0].Prod_stat+' '+objList[0].Prod_price+'元</p><li class="detail-title">規格</li><div id="product-spec">'+objList[0].Prod_stat+'，紙箱裝</div><li class="detail-title">運送方式</li><div id="product-delivery">'+objList[0].Prod_arrive+'，200元</div><li class="detail-title">付費方式</li><div id="product-payment">'+objList[0].Prod_payment+'</div></ul><a id="button" href="farmer.html">立刻購買</a></div><div class="product-description"><h3 class="description-title">關於農產品</h3><div id="farm-description"><li class="detail-title">農友</li><a href="farmer.html?name='+farmerId+'"><img src="'+farmerPic+'" id="farmer-img"></a><a href="farmer.html?name='+farmerId+'" id="farm-name">'+farmLand+'</a><a href="farmer.html?name='+farmerId+'" id="farmer-name">'+farmerName+'</a></div><h3 class="description-title">農產品敘述</h3><div id="product-description">'+objList[0].Prod_describe+'</div></div>';
           $('.product-detail').append(detail);
 /*          var description = '<li>農友</li><img src="'+farmerPic+'" id="farmer-img"><a href="farmer.html?name='+farmerId+'" id="farm-name">'+farmerName+'</a><a href="farmer.html?name='+farmerId+'" id="farmer-name">'+farmerName+'</a>';
           $('#farm-description').append(description);
           var prodescription = '<div id="product-description">'+objList[0].Prod_describe+'</div>';
           $('#product-description').append(prodescription);*/
-        });
+      });
     }
   });
   event.preventDefault();
