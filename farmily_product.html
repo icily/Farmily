@@ -17,11 +17,11 @@
          <a href="farmily_product.html">農產品</a>
          <div class="sub">
            <ul>
-             <li><a href="farmily_product.html" onClick="getData(1, '五榖雜糧')">五穀雜糧</a></li>
-             <li><a href="farmily_product.html" onClick="getData(1, '蔬菜')">蔬菜</a></li>
-             <li><a href="farmily_product.html" onClick="getData(1, '畜產/水產')">畜產/水產</a></li>
-             <li><a href="farmily_product.html" onClick="getData(1, '水果')">水果</a></li>
-             <li><a href="farmily_product.html" onClick="getData(1, '手製品')">手製品</a></li>
+             <li><a href="farmily_product.html" onClick="getProd(1, '五榖雜糧')">五穀雜糧</a></li>
+             <li><a href="farmily_product.html" onClick="getProd(1, '蔬菜')">蔬菜</a></li>
+             <li><a href="farmily_product.html" onClick="getProd(1, '畜產/水產')">畜產/水產</a></li>
+             <li><a href="farmily_product.html" onClick="getProd(1, '水果')">水果</a></li>
+             <li><a href="farmily_product.html" onClick="getProd(1, '手製品')">手製品</a></li>
            </ul>
          </div>
        </li>
@@ -59,6 +59,8 @@
   </header>
 	 
 	 <section>
+		
+		<br>
 		<p class="title">
 			<img src="img/leaf.png"></img>
 			<a>農產品列表</a>
@@ -70,581 +72,20 @@
 			</form>
 		</div>
 		
-		<div class="tabs">
-
-			<div class="tab" >
-				<input type="radio" id="tab1" name="tabs" checked="checked">
-				<label for="tab1">五穀雜糧</label>
-				<div class="content">
-					
-				<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">劉小琪</p>
-					<p>蘋果、香蕉</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">劉小琪</p>
-					<p>蘋果、香蕉</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">劉小琪</p>
-					<p>蘋果、香蕉</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">劉小琪</p>
-					<p>蘋果、香蕉</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">劉小琪</p>
-					<p>蘋果、香蕉</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">劉小琪</p>
-					<p>蘋果、香蕉</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">劉小琪</p>
-					<p>蘋果、香蕉</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">劉小琪</p>
-					<p>蘋果、香蕉</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">劉小琪</p>
-					<p>蘋果、香蕉</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">劉小琪</p>
-					<p>蘋果、香蕉</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">劉小琪</p>
-					<p>蘋果、香蕉</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">劉小琪</p>
-					<p>蘋果、香蕉</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">劉小琪</p>
-					<p>蘋果、香蕉</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">劉小琪</p>
-					<p>蘋果、香蕉</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">劉小琪</p>
-					<p>蘋果、香蕉</p>
-				</div>
-			</a>
-				
+		<div class="abgne_tab">
+			<ul class="tabs">
+				<li><a href="#tab1" onclick="getProd(1,'五穀雜糧')">五穀雜糧</a></li>
+				<li><a href="#tab2" onclick="getProd(1,'蔬菜')">蔬菜</a></li>
+				<li><a href="#tab3" onclick="getProd(1,'畜產/水產')">畜產/水產</a></li>
+				<li><a href="#tab4" onclick="getProd(1,'水果')">水果</a></li>
+				<li><a href="#tab5" onclick="getProd(1,'手製品')">手製品</a></li>
+			</ul>
+ 
+			<div class="tab_container">
+				<div id="tab" class="tab_content">
 				</div>
 			</div>
-		
-			<div class="tab">
-				<input type="radio" id="tab2" name="tabs">
-				<label for="tab2">蔬菜</label>
-				<div class="content">
-				
-				<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">王邦任</p>
-					<p>好吃的香吉士</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">王邦任</p>
-					<p>好吃的香吉士</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">王邦任</p>
-					<p>好吃的香吉士</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">王邦任</p>
-					<p>好吃的香吉士</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">王邦任</p>
-					<p>好吃的香吉士</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">王邦任</p>
-					<p>好吃的香吉士</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">王邦任</p>
-					<p>好吃的香吉士</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">王邦任</p>
-					<p>好吃的香吉士</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">王邦任</p>
-					<p>好吃的香吉士</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">王邦任</p>
-					<p>好吃的香吉士</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">王邦任</p>
-					<p>好吃的香吉士</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">王邦任</p>
-					<p>好吃的香吉士</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">王邦任</p>
-					<p>好吃的香吉士</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">王邦任</p>
-					<p>好吃的香吉士</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">王邦任</p>
-					<p>好吃的香吉士</p>
-				</div>
-			</a>
-				
-				</div>
-			</div>
-		
-			<div class="tab">
-				<input type="radio" id="tab3" name="tabs">
-				<label for="tab3">畜產/水產</label>
-				<div class="content">
-				
-				<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Helia</p>
-					<p>超級大西瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Helia</p>
-					<p>超級大西瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Helia</p>
-					<p>超級大西瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Helia</p>
-					<p>超級大西瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Helia</p>
-					<p>超級大西瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Helia</p>
-					<p>超級大西瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Helia</p>
-					<p>超級大西瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Helia</p>
-					<p>超級大西瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Helia</p>
-					<p>超級大西瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Helia</p>
-					<p>超級大西瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Helia</p>
-					<p>超級大西瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Helia</p>
-					<p>超級大西瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Helia</p>
-					<p>超級大西瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Helia</p>
-					<p>超級大西瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Helia</p>
-					<p>超級大西瓜</p>
-				</div>
-			</a>
-				
-				</div>
-			</div>
-			
-			<div class="tab">
-				<input type="radio" id="tab4" name="tabs">
-				<label for="tab4">水果</label>
-				<div class="content">
-				
-				<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">陳小妤</p>
-					<p>榴槤</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">陳小妤</p>
-					<p>榴槤</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">陳小妤</p>
-					<p>榴槤</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">陳小妤</p>
-					<p>榴槤</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">陳小妤</p>
-					<p>榴槤</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">陳小妤</p>
-					<p>榴槤</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">陳小妤</p>
-					<p>榴槤</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">陳小妤</p>
-					<p>榴槤</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">陳小妤</p>
-					<p>榴槤</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">陳小妤</p>
-					<p>榴槤</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">陳小妤</p>
-					<p>榴槤</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">陳小妤</p>
-					<p>榴槤</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">陳小妤</p>
-					<p>榴槤</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">陳小妤</p>
-					<p>榴槤</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">陳小妤</p>
-					<p>榴槤</p>
-				</div>
-			</a>
-				
-				</div>
-			</div>
-			
-			<div class="tab">
-				<input type="radio" id="tab5" name="tabs">
-				<label for="tab5">手製品</label>
-				<div class="content">
-				
-				<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Lynn</p>
-					<p>香瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Lynn</p>
-					<p>香瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Lynn</p>
-					<p>香瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Lynn</p>
-					<p>香瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Lynn</p>
-					<p>香瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Lynn</p>
-					<p>香瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Lynn</p>
-					<p>香瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Lynn</p>
-					<p>香瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Lynn</p>
-					<p>香瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Lynn</p>
-					<p>香瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Lynn</p>
-					<p>香瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Lynn</p>
-					<p>香瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Lynn</p>
-					<p>香瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Lynn</p>
-					<p>香瓜</p>
-				</div>
-			</a>
-			<a href="farmer.html">	
-				<div class="about">
-					<img src="img/orange_2.png"></img>
-					<p class="name">Lynn</p>
-					<p>香瓜</p>
-				</div>
-			</a>
-				
-				</div>
-			</div>
-
-		</div>
-		
-		
+		</div>		
 	 
 	 </section>
 	 
@@ -659,5 +100,42 @@
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src='https://www.parsecdn.com/js/parse-1.2.18.min.js'></script>
 	<script src="./js/nav.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/product.js"></script>
+     <script type="text/javascript">
+  (function ($) {
+ $.url = {};
+ $.extend($.url, {
+  _params: {},
+  init: function(){
+   var paramsRaw = "";
+   try{
+    paramsRaw = 
+     (document.location.href.split("?", 2)[1] || "").split("#")[0].split("&") || [];
+    for(var i = 0; i< paramsRaw.length; i++){
+     var single = paramsRaw[i].split("=");
+     if(single[0])
+      this._params[single[0]] = unescape(single[1]);
+    }
+   }
+   catch(e){
+    alert(e);
+   }
+  },
+  param: function(name){
+   return this._params[name] || "";
+  },
+  paramAll: function(){
+   return this._params;
+  }
+ });
+ $.url.init();
+})(jQuery);
+  </script>
+  <script type="text/javascript">
+console.log($.url.param("name"));
+$(document).ready(function(){
+	getData(1,$.url.param('name'));
+})
+  </script>
 	</html>
 

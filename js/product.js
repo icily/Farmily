@@ -155,7 +155,7 @@ function getProd(page,category){
             alert("Error: " + error.code + " " + error.message);
           }
         }).then(function(){
-          var html = '<a href="product_detail.html?name='+e.objectId+'"><div class="about"><img src="'+e.Prod_Pic.url+'"></img><p class="name">'+e.Prod_name+'</p><p>'+list+'</p></div></a>';
+          var html = '<a href="product_detail.html?name='+e.objectId+'"><div class="about"><div class="img"><img src="'+e.Prod_Pic.url+'"></img></div><div class="info"><div class="name">'+e.Prod_name+'</div><div class="product">'+list+'</div><div></div></a>';
           $('.tab_content').append(html);
         });
       });
