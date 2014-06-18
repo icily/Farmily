@@ -62,32 +62,32 @@
   </header>
   
   <section>
-	<div class="content">
-		<div class="title">
-			<img class="list-img" src="img/leaf.png"></img>登入
-		</div>
-		<div class="form">
-			<form class="pure-form pure-form-stacked" method="submit" action="#">
-				<fieldset>
-					<div class="format">
-						<label>E-mail</label>
-		            	<input id="id" type="text" class="pure-input-rounded" placeholder="">
-	            	</div>
-	            	<div>
-						<label>密碼</label>
-		            	<input id="password" type="password" class="pure-input-rounded" placeholder="">
-	            	</div>
-	        		<div class="format">
-	        			<button type="submit" id="button" class="pure-button">登入</button>
-	        		</div>	
-				</fieldset>
-			</form>
-		</div>
-	</div>
+  <div class="content">
+    <div class="title">
+      <img class="list-img" src="img/leaf.png"></img>登入
+    </div>
+    <div class="form">
+      <form id="loginForm" class="pure-form pure-form-stacked" method="submit" action="#">
+        <fieldset>
+          <div class="format">
+            <label>E-mail</label>
+                  <input id="login_username" type="text" class="pure-input-rounded" placeholder="">
+                </div>
+                <div>
+            <label>密碼</label>
+                  <input id="login_password" type="password" class="pure-input-rounded" placeholder="">
+                </div>
+              <div class="format">
+                <button type="submit" id="button" class="pure-button">登入</button>
+              </div>  
+        </fieldset>
+      </form>
+    </div>
+  </div>
   </section>
   
   <footer>
-  		<ul>
+      <ul>
              <a href=".."><li>交易提醒</li></a>
              <a href=".."><li>聯絡我們</li></a>
         </ul>
@@ -97,15 +97,8 @@
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src='https://www.parsecdn.com/js/parse-1.2.18.min.js'></script>
 <script src="./js/nav.js" type="text/javascript"></script>
+<script src="./js/login.js" type="text/javascript"></script>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&appId=1453336538238575&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 </html>
 
