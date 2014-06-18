@@ -7,17 +7,17 @@
 	</head>
 	<body>
   <header>   
-   	<a href="index.html"><img src="img/logo.png" alt="Farmily" class="logo"></a>
-   	<nav>
+    <a href="index.html"><img src="img/logo.png" alt="Farmily" class="logo"></a>
+    <nav>
      <ul class="main_nav">
        <li class="main_nav_li">
-       	<a href="index.html">首頁</a>
+        <a href="index.html">首頁</a>
        </li>
        <li class="main_nav_li">
          <a href="farmily_product.html">農產品</a>
          <div class="sub">
            <ul>
-             <li><a href="farmily_product.html">五穀雜糧</a></li>
+             <li><a href="farmily_product_1.html">五穀雜糧</a></li>
              <li><a href="farmily_product_2.html">蔬菜</a></li>
              <li><a href="farmily_product_3.html">畜產/水產</a></li>
              <li><a href="farmily_product_4.html">水果</a></li>
@@ -26,8 +26,8 @@
          </div>
        </li>
        <li class="main_nav_li">
-       	<a href="farmily_farmer_list.html">農友列表</a>
-       		<div class="sub">
+        <a href="farmily_farmer_list.html">農友列表</a>
+          <div class="sub">
            <ul>
              <li><a href="farmily_farmer_list.html">北部</a></li>
              <li><a href="farmily_farmer_list_2.html">中部</a></li>
@@ -38,22 +38,22 @@
          </div>
        </li>
        <li class="main_nav_li">
-       	<a href="farmily_aboutus.html">關於農家</a>
+        <a href="farmily_aboutus.html">關於農家</a>
        </li>
        <div class="member">
-	       <li class="main_nav_li" id="registerButton">
-	       	<a class="member-btn" href="farmily_register.html">農友登記</a>
-	       </li>
-	       <li class="main_nav_li" id="loginButton">
-	       	<a class="member-btn" href="farmily_login.html">登入</a>
-	       </li>
-   	       <li class="main_nav_li" id="editButton">
-	       	<a class="member-btn" href="farm_edit.html">管理農園</a>
-	       </li>
-   	       <li class="main_nav_li" id="logoutButton">
-	       	<a class="member-btn" href="..">登出</a>
-	       </li>
-	   </div>
+         <li class="main_nav_li" id="registerButton">
+          <a class="member-btn" href="farmily_register.html">農友登記</a>
+         </li>
+         <li class="main_nav_li" id="loginButton">
+          <a class="member-btn" href="farmily_login.html?#">登入</a>
+         </li>
+           <li class="main_nav_li" id="editButton">
+          <a class="member-btn" href="farm_edit.html">管理農園</a>
+         </li>
+           <li class="main_nav_li" id="logoutButton">
+          <a class="member-btn" href="index.html">登出</a>
+         </li>
+     </div>
      </ul>
     </nav> 
   </header>
@@ -67,7 +67,7 @@
 		</p>
 		
 		<div class="main">
-			<form class="search" method="post" action="index.html" >
+			<form class="search" method="get" action="farmily_product.html" >
 				<input type="text" name="q" placeholder="請輸入關鍵字" />
 			</form>
 		</div>
@@ -100,8 +100,8 @@
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src='https://www.parsecdn.com/js/parse-1.2.18.min.js'></script>
 	<script src="./js/nav.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/product.js"></script>
-     <script type="text/javascript">
+  <script type="text/javascript" src="js/product.js"></script>
+    <script type="text/javascript">
   (function ($) {
  $.url = {};
  $.extend($.url, {
@@ -114,7 +114,7 @@
     for(var i = 0; i< paramsRaw.length; i++){
      var single = paramsRaw[i].split("=");
      if(single[0])
-      this._params[single[0]] = unescape(single[1]);
+      this._params[single[0]] = encodeURIComponent(single[1]);
     }
    }
    catch(e){
@@ -134,13 +134,14 @@
   <script type="text/javascript">
 console.log($.url.param("name"));
 $(document).ready(function(){
-	getData(1,$.url.param('name'));
+  getData(1,$.url.param('name'));
+  search($.url.param('q'));
 })
   </script>
-  <script type="text/javascript">
+  <!--<script type="text/javascript">
   $(function(){
 	getProd(1,'五穀雜糧');
   })
-  </script>
+  </script>!-->
 	</html>
 

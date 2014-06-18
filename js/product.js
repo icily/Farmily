@@ -29,6 +29,46 @@ $(function(){
 	});
 });
 
+function search(str){
+  console.log(str);
+  str = decodeURIComponent(str);
+  str = decodeURIComponent(str);
+  console.log(str);
+  var limit = 15;
+  var Farmer = Parse.Object.extend("Farmer");
+  var Product = Parse.Object.extend("Product");
+  var query = new Parse.Query(Product);
+  var queryF = new Parse.Query(Farmer);
+  var list = "hihi";
+  query.limit(limit);
+  query.contains("Prod_name", str);
+  query.descending("createdAt");
+  query.find({
+    success: function(results) {
+      $('.tab_content').html("");
+      var objList = results.map(function (e){ return e.toJSON() });
+      objList.forEach(function (e){
+        queryF.descending("createdAt");
+        queryF.equalTo("objectId",e.Farmer);
+        queryF.find({
+          success: function(output){
+            var farmer = output.map(function (e){ return e.toJSON() });
+            list = farmer[0].Name;
+          },
+          error: function(error) {
+            console("Error: " + error.code + " " + error.message);
+          }
+        }).then(function(){
+          var html = '<a href="product_detail.html?name='+e.objectId+'"><div class="about"><div class="img"><img src="'+e.Prod_Pic.url+'"></img></div><div class="info"><div class="name">'+e.Prod_name+'</div><div class="product">'+list+'</div></div></div></a>';
+          $('.tab_content').append(html);
+        });
+      });
+    }
+  });
+  event.preventDefault();
+}
+
+
 function getData(page,category){
   var limit = 15;
   var skip = (page-1) * limit;
@@ -59,12 +99,13 @@ function getData(page,category){
             });
           },
           error: function(error) {
-          alert("Error: " + error.code + " " + error.message);
+          console("Error: " + error.code + " " + error.message);
           }
         }).then(function(){
           var html = '<a href="farmer.html?name='+e.objectId+'"><div class="about"><div class="img"><img src="'+e.Farmer_Pic.url+'"></img></div><div class="info"><div class="name">'+e.Name+'</div><div class="product">'+list+'</div></div></div></a>';
           $('.tab_content').append(html);
         });
+
       });
       //底下的小分頁=================
       query.limit(0);
@@ -152,7 +193,7 @@ function getProd(page,category){
             list = farmer[0].Name;
           },
           error: function(error) {
-            alert("Error: " + error.code + " " + error.message);
+            console("Error: " + error.code + " " + error.message);
           }
         }).then(function(){
           var html = '<a href="product_detail.html?name='+e.objectId+'"><div class="about"><div class="img"><img src="'+e.Prod_Pic.url+'"></img></div><div class="info"><div class="name">'+e.Prod_name+'</div><div class="product">'+list+'</div><div></div></a>';

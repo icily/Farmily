@@ -151,7 +151,6 @@ section{
   /*background-color: white;*/
   background:url(../img/background_inner.jpg);
   width: 950px;
-  height: auto;
   position: relative;
   /*left:50%;*/
   top: 10px;
@@ -159,6 +158,7 @@ section{
   /*margin-left:-480px;*/
   box-shadow: rgb(155,155,155) 0px 1px 10px 0px;
   border-radius: 2em;
+  padding: 20px 0;
 }
 
 .title a{
@@ -190,8 +190,41 @@ section{
   background-color:#44c767;
 }
 
+.content{
+  margin: 30px;
+  display: inline-block;
+  width: 870px;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.6);
+}
+
 .menu{
   position: relative;
+  margin-top: 30px;
+  width: 900px;
+  text-align: right;
+}
+
+.item{
   display: inline-block;
-  float: right;
+  background-color: rgba(155,155,155,0.2);
+  height: 180px;
+  border-radius: 20px;
+  margin: 10px 5px;
+  vertical-align: top;
+}
+
+#prod-img{
+  display: block;
+}
+
+.item img{
+  border-radius: 20px 20px 0 0;
+  height: 150px;
+}
+
+#prod-name{
+  display: block;
+  color: #000;
+  text-align: center;
 }
