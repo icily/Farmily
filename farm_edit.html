@@ -49,7 +49,7 @@
           <a class="member-btn" href="farmily_login.html?#">登入</a>
          </li>
            <li class="main_nav_li" id="editButton">
-          <a class="member-btn" href="farm_edit.html">管理農園</a>
+          <a class="member-btn" href="farm_edit.html" onClick="modify()">管理農園</a>
          </li>
            <li class="main_nav_li" id="logoutButton">
           <a class="member-btn" href="index.html">登出</a>
@@ -71,35 +71,7 @@
 	</div>
 
 	<div class="content">
-		<a class="item" href="">
-			<div id="prod-img"><img src="img/product_photo.png"></div>
-			<div id="prod-name">花椰菜</div>
-		</a>
-
-		<a class="item" href="">
-			<div id="prod-img"><img src="img/diy.jpg"></div>
-			<div id="prod-name">花椰菜</div>
-		</a>
-
-    <a class="item" href="">
-      <div id="prod-img"><img src="img/product_photo.png"></div>
-      <div id="prod-name">花椰菜</div>
-    </a>
-
-    <a class="item" href="">
-      <div id="prod-img"><img src="img/product_photo.png"></div>
-      <div id="prod-name">花椰菜</div>
-    </a>
-
-    <a class="item" href="">
-      <div id="prod-img"><img src="img/product_photo.png"></div>
-      <div id="prod-name">花椰菜</div>
-    </a>
-
-    <a class="item" href="">
-      <div id="prod-img"><img src="img/product_photo.png"></div>
-      <div id="prod-name">花椰菜</div>
-    </a>
+		
 	</div>
   </section>
   
@@ -114,8 +86,13 @@
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src='https://www.parsecdn.com/js/parse-1.2.18.min.js'></script>
 <script src="./js/nav.js" type="text/javascript"></script>
-
-
+<script src="./js/product.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+  console.log("hihi");
+  modify();
+})
+</script>
 </html>
 
 

@@ -29,6 +29,33 @@ $(function(){
 	});
 });
 
+function modify (){
+  var currentUser = Parse.User.current();
+  var Farmer = Parse.Object.extend("Farmer");
+  var Product = Parse.Object.extend("Product");
+  var query = new Parse.Query(Product);
+  var queryF = new Parse.Query(Farmer);
+  queryF.equalTo("Name",currentUser.attributes.username);
+  console.log(currentUser.attributes.username);
+  queryF.find({
+    success: function(results) {
+    var objList = results.map(function (e){ return e.toJSON() });
+    console.log(objList);
+    query.equalTo("Farmer",objList[0].objectId);
+    query.find({
+      success: function(output){
+        var productList = output.map(function (e){ return e.toJSON() });
+        productList.forEach(function (e){
+          var product_detail = '<a class="item" href=""><div id="prod-img"><img src="'+e.Prod_Pic.url+'"></div><div id="prod-name">'+e.Prod_name+'</div></a>';
+          $('.content').append(product_detail);
+        })
+      }
+    });
+    }
+  })
+  event.preventDefault();
+}
+
 function search(str){
   console.log(str);
   str = decodeURIComponent(str);
