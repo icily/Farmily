@@ -3,11 +3,11 @@
 	height: 530px;
 }
 
-.title{
+.overview{
 	margin-top: 50px;
 }
 
-.title li{
+.overview li{
   width: 840px;
   position:relative;
   list-style:none;
@@ -17,7 +17,7 @@
   margin-top:10px;
 }
 
-.title li p{
+.overview li p{
   font-size:24px;
   color:black;
   margin-left:6px;
@@ -84,9 +84,11 @@
 	border-radius: 2em 2em 0 0;
 }
 
-
-
-
-
-
-
+.overview{
+	position: relative;
+	padding-bottom: .3em;
+	margin: 1em 30px 1.3em 30px;
+	font-size: 20px;
+	color: black;
+	width: 880px;
+}
