@@ -285,12 +285,12 @@ section{
   background-color:#44c767;
 }
 
+#signupform{
+  margin-left: 50px;
+}
 
-
-
-
-
-
-
-
-
+#signup_farm_story{
+  width: 30em;
+  height: 10em;
+  resize: none;
+}
